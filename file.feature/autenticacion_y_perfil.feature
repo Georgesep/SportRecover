@@ -26,7 +26,7 @@ Feature: Registro, autenticación y gestión de perfil de usuarios
     Then el sistema autentica las credenciales
     And redirige al deportista al dashboard principal con su nombre de bienvenida
 
-Scenario 2: Inicio de sesión fallido por credenciales incorrectas
+#Scenario 2: Inicio de sesión fallido por credenciales incorrectas
     Given que el deportista ingresa una contraseña incorrecta
     When presiona "Iniciar sesión"
     Then el sistema muestra el mensaje "Credenciales incorrectas"
@@ -41,14 +41,14 @@ Scenario 2: Inicio de sesión fallido por credenciales incorrectas
     Then el sistema actualiza la información
     And confirma los cambios con el mensaje "Perfil actualizado correctamente"
 
-Scenario 2: Validación de datos fuera de rango
+#Scenario 2: Validación de datos fuera de rango
 
     Given que el deportista ingresa un valor de peso fuera del rango permitido (por ejemplo, 0 kg o 500 kg)
     When intenta guardar el perfil
     Then el sistema muestra el mensaje de validación "Ingresa un valor de peso válido entre 30 y 250 kg"
     And no guarda los cambios hasta ingresar un valor correcto
 
-US26: Registro de cuenta como fisioterapeuta
+#US26: Registro de cuenta como fisioterapeuta
 
 #Scenario 1: Registro exitoso de fisioterapeuta
 
