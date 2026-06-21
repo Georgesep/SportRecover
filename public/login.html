@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SportRecover - Iniciar Sesión</title>
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <img src="assets/images/logo.png" alt="Logo de SportRecover" class="navbar__logo">
+            <button class="navbar__toggle" aria-label="Abrir menú">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="navbar__menu">
+                <li><a href="index.html" class="navbar__link" style="color: #41b34a;">Inicio</a></li>
+                <li><a href="nosotros.html" class="navbar__link">Nosotros</a></li>
+                <li><a href="testimonios.html" class="navbar__link">Testimonios</a></li>
+                <li><a href="contacto.html" class="navbar__link">Contáctanos</a></li>
+                <li><a href="login.html" class="navbar__link btn-nav">Iniciar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="login-section">
+            <div class="form-box">
+                <div class="form-box__logo" style="text-align: center;">Sport<span>Recover</span></div>
+                <h2 class="form-box__title" style="text-align: center;">Iniciar <span>Sesión</span></h2>
+                <p class="form-box__subtitle" style="text-align: center;">Ingresa tus credenciales para acceder al seguimiento de tu rehabilitación.</p>
+                <form class="register-form">
+                    <input type="email" id="email" class="form-input" required placeholder="Correo electrónico">
+                    <input type="password" id="password" class="form-input" required placeholder="Contraseña">
+                    <button type="submit" class="btn-primary" style="width: 100%">Ingresar</button>
+                    <div class="form-divider">o ingresa con</div>
+                    <button type="button" class="btn-google"><span style="font-weight:bold;color:#4285F4;">G</span> Iniciar con Google</button>
+                    <div class="form-footer-link" style="text-align: center;">¿No tienes una cuenta? <a href="registro.html" style="color:var(--accent-blue); text-decoration:none; font-weight:600;">Regístrate aquí</a></div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="brand-footer">@2026 SportRecover</footer>
+    <script src="assets/scripts/main.js"></script>
+</body>
+</html>
