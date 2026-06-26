@@ -4,66 +4,249 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SportRecover - Inicio</title>
-    <link rel="stylesheet" href="public/assets/styles/style.css">
-    <link rel="icon" href="public/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="assets/styles/responsive.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <header class="header">
-        <nav class="navbar">
-            <img src="public/assets/images/logo.png" alt="Logo de SportRecover" class="navbar__logo">
-            <button class="navbar__toggle" aria-label="Abrir menú">
-                <img src="public/assets/images/Vector.png" alt="Icono de menú" class="navbar__toggle-icon">
+    <header class="encabezado">
+        <nav class="barra-nav">
+            <img src="assets/images/logo.png" alt="Logo de SportRecover" class="barra-nav__logo">
+            <button class="barra-nav__boton" aria-label="Abrir menú">
+                <img src="assets/images/Vector.png" alt="Icono de menú" class="barra-nav__icono-boton">
             </button>
-            <ul class="navbar__menu">
-                <li><a href="public/index.html" class="navbar__link" style="color: #41b34a;">Inicio</a></li>
-                <li><a href="public/nosotros.html" class="navbar__link">Nosotros</a></li>
-                <li><a href="public/testimonios.html" class="navbar__link">Testimonios</a></li>
-                <li><a href="public/contacto.html" class="navbar__link">Contáctanos</a></li>
-                <li><a href="public/login.html" class="navbar__link btn-nav">Iniciar Sesión</a></li>
+            <ul class="barra-nav__menu">
+                <li><a href="index.html" class="barra-nav__enlace barra-nav__enlace--activo">Inicio</a></li>
+                <li><a href="#nosotros" class="barra-nav__enlace">Nosotros</a></li>
+                <li><a href="#testimonios" class="barra-nav__enlace">Testimonios</a></li>
+                <li><a href="#contacto" class="barra-nav__enlace">Contáctanos</a></li>
+                <li><a href="login.html" class="barra-nav__enlace boton-nav">Iniciar Sesión</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="hero">
-            <div class="hero__content">
-                <h1 class="hero__title">Recupera tu<br><span>mejor versión</span></h1>
-                <p class="hero__subtitle">Recibe seguimiento profesional, monitorea tu progreso y vuelve a tu mejor nivel sin salir de casa.</p>
-                
-                <a href="public/registro.html" class="btn-primary">Empieza ahora</a>
-                
-                <div class="hero__features">
-                    <div class="feature-item">
-                        <div class="feature-box-placeholder">
-                            <img src="public/assets/images/ia.png" alt="Evaluación con IA">
+        <section class="principal principal--inicio">
+            <div class="principal__contenido">
+                <h1 class="principal__titulo principal__titulo--inicio">Recupera tu<br><span>mejor versión</span></h1>
+                <p class="principal__subtitulo principal__subtitulo--inicio">Recibe seguimiento profesional, monitorea tu progreso y vuelve a tu mejor nivel sin salir de casa.</p>
+                <a href="registro.html" class="boton-primario">Empieza ahora</a>
+                <div class="principal__caracteristicas">
+                    <div class="caracteristica">
+                        <div class="caracteristica__caja">
+                            <img src="assets/images/evaluacion_ia.png" alt="Evaluación con IA">
                         </div>
-                        <div class="feature-item__text">Evaluación con IA</div>
+                        <div class="caracteristica__texto">Evaluación con IA</div>
                     </div>
-                    <div class="feature-item">
-                        <div class="feature-box-placeholder">
-                            <img src="public/assets/images/rutinas.png" alt="Planes y rutinas">
+                    <div class="caracteristica">
+                        <div class="caracteristica__caja">
+                            <img src="assets/images/planes_rutinas.png" alt="Planes y rutinas">
                         </div>
-                        <div class="feature-item__text">Planes y rutinas</div>
+                        <div class="caracteristica__texto">Planes y rutinas</div>
                     </div>
-                    <div class="feature-item">
-                        <div class="feature-box-placeholder">
-                            <img src="public/assets/images/fisio.png" alt="Conecta con fisioterapeutas">
+                    <div class="caracteristica">
+                        <div class="caracteristica__caja">
+                            <img src="assets/images/conecta_fisioterapeutas.png" alt="Conecta con fisioterapeutas">
                         </div>
-                        <div class="feature-item__text">Conecta con fisioterapeutas</div>
+                        <div class="caracteristica__texto">Conecta con fisioterapeutas</div>
                     </div>
                 </div>
             </div>
-            
-            <div class="hero__image-container">
-                <img src="public/assets/images/chica-estirando.png" alt="Chica haciendo estiramientos">
+            <div class="principal__imagen principal__imagen--derecha">
+                <img src="assets/images/chica-estirando.png" alt="Chica haciendo estiramientos">
             </div>
         </section>
+
+        <section id="nosotros" class="principal principal--nosotros">
+            <div class="principal__contenido">
+                <h1 class="principal__titulo">SportRecover<br><span>es....</span></h1>
+                <p class="principal__subtitulo">Una plataforma pensada para ayudar a jóvenes deportistas que padecen de una lesión muscular y están en un proceso de rehabilitación. Nosotros buscamos que su situación no afecte demasiado su rutina diaria de deporte, estando cerca de ellos para acompañarlos durante sus actividades de recuperación.</p>
+            </div>
+            <div class="principal__imagen nosotros__collage">
+                <img src="assets/images/nosotros.png" alt="Deportistas en rehabilitación">
+            </div>
+        </section>
+
+        <section class="seccion-proposito">
+            <div class="proposito__encabezado proposito__encabezado--completo">
+                <h2>¿Por qué hacemos esto?</h2>
+            </div>
+            <div class="proposito__cuadricula">
+                <div class="proposito__grupo">
+                    <h3 class="proposito__titulo-tarjeta">Entendemos tu situación</h3>
+                    <article class="proposito__tarjeta">
+                        <div class="proposito__icono">
+                            <img src="assets/images/entendemos_situacion.png" alt="Entendemos tu situación">
+                        </div>
+                        <div>
+                            <p>Sabemos que, como deportista, tienes la responsabilidad de cumplir tus actividades rutinarias para fortalecer tu cuerpo.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="proposito__grupo">
+                    <h3 class="proposito__titulo-tarjeta">Entendemos tu necesidad</h3>
+                    <article class="proposito__tarjeta">
+                        <div class="proposito__icono">
+                            <img src="assets/images/entendemos_necesidad.png" alt="Entendemos tu necesidad">
+                        </div>
+                        <div>
+                            <p>Conocemos que un deportista debe asumir la responsabilidad necesaria para cumplir con sus actividades rutinarias.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="proposito__grupo">
+                    <h3 class="proposito__titulo-tarjeta">Entendemos tu frustración</h3>
+                    <article class="proposito__tarjeta">
+                        <div class="proposito__icono">
+                            <img src="assets/images/entendemos_frustracion.png" alt="Entendemos tu frustración">
+                        </div>
+                        <div>
+                            <p>Entendemos la frustración que existe al tener un cuerpo lesionado que te imposibilita realizar tus actividades.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="proposito__grupo">
+                    <h3 class="proposito__titulo-tarjeta">Entendemos tu deseo</h3>
+                    <article class="proposito__tarjeta">
+                        <div class="proposito__icono">
+                            <img src="assets/images/entendemos_deseo.png" alt="Entendemos tu deseo">
+                        </div>
+                        <div>
+                            <p>Reconocemos el deseo de seguir al mejor deportista debido a que existe un ambiente muy competitivo.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion-nosotros">
+            <div class="nosotros__encabezado nosotros__encabezado--completo">
+                <h2>¿Qué Ofrecemos?</h2>
+            </div>
+            <div class="nosotros__contenido">
+                <div class="ofertas__cuadricula">
+                    <div class="oferta__grupo">
+                        <h3 class="oferta__titulo">Acompañamiento</h3>
+                        <article class="oferta__tarjeta-nueva">
+                            <img src="assets/images/acompañamiento.png" alt="Acompañamiento">
+                            <p>Nuestro aplicativo cuenta con funciones que te mantienen al pendiente de tus rutinas de rehabilitación.</p>
+                        </article>
+                    </div>
+                    <div class="oferta__grupo">
+                        <h3 class="oferta__titulo">Revolver dudas</h3>
+                        <article class="oferta__tarjeta-nueva">
+                            <img src="assets/images/resolver_dudas.png" alt="Revolver dudas">
+                            <p>Disponemos de diversas opciones diseñadas para resolver tus dudas en tiempo real.</p>
+                        </article>
+                    </div>
+                    <div class="oferta__grupo">
+                        <h3 class="oferta__titulo">Seguridad</h3>
+                        <article class="oferta__tarjeta-nueva">
+                            <img src="assets/images/seguridad.png" alt="Seguridad">
+                            <p>Contamos con un aplicativo que ofrece seguridad tanto a nivel sistemático como en la atención personalizada que te brindamos.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonios" class="principal principal--testimonios">
+            <div class="principal__contenido">
+                <h1 class="principal__titulo principal__titulo--testimonios">Contamos con<br><span>testimonios de usuarios</span></h1>
+                <p class="principal__subtitulo">Recompilamos testimonios de muchos usuarios con la misión de ver nuestros errores y mejorar a partir de ello, así ofrecer un producto de calidad.</p>
+            </div>
+            <div class="principal__imagen">
+                <img src="assets/images/chica_corriendo.png" alt="Atleta corriendo">
+            </div>
+        </section>
+
+        <section class="contenedor-testimonios">
+            <h2 class="testimonios__titulo">Testimonios</h2>
+            <p class="testimonios__subtitulo">Durante los últimos 30 días</p>
+
+            <div class="testimonio__tarjeta">
+                <img src="assets/images/manuel.png" alt="Manuel Mendoza">
+                <div class="content">
+                    <h4>Manuel Mendoza Bazques</h4>
+                    <p>"El aplicativo me mantuvo al pendiente de mis rutinas y me hizo sentir realmente apreciado. Lo usé durante 30 días y he notado una gran mejoría en mi ..."</p>
+                </div>
+                <a href="#manuel-completo" class="boton-primario-fijo">ver mas</a>
+            </div>
+
+            <div class="testimonio__tarjeta">
+                <img src="assets/images/robert.png" alt="Robert Mendez">
+                <div class="content">
+                    <h4>Robert Mendez Paucar</h4>
+                    <p>"Yo contaba con la preocupación de no poder integrarme de nuevo a mis rutinas habituales de ejercicios, pero durante el tiempo usando el aplicativo he mejorado…"</p>
+                </div>
+                <a href="#robert-completo" class="boton-primario-fijo">ver mas</a>
+            </div>
+
+            <div id="manuel-completo" class="testimonio__detalle">
+                <h3>Manuel Mendoza Bazques</h3>
+                <div class="testimonio__cuerpo">
+                    <img src="assets/images/manuel.png" alt="Manuel Mendoza">
+                    <div class="testimonio__texto">
+                        <p>El aplicativo me mantuvo al pendiente de mis rutinas y me hizo sentir realmente apreciado. Lo usé durante 30 días y he notado una gran mejoría en mi cuerpo. Antes de usar el aplicativo, tenía molestias por el repentino cambio de la rutina, de la cual ya había adquirido una costumbre o, mejor dicho, se había vuelto una rutina diaria.</p>
+                        <p style="margin-top:1rem;">El caso es que era consciente de que los horarios que establecía no eran eficientes para que mi proceso de recuperación fuera rápido, pero no podía estar dirigiéndome constantemente al centro médico para realizar mis debidas consultas con mi fisioterapeuta; perdía tiempo y dinero. Sin embargo, el aplicativo resolvió estos problemas con sus funciones, como la posibilidad de realizar mis propias consultas médicas y crear un horario personal. Claro, no eran las mismas rutinas a las que estaba acostumbrado, pero mantenían la exigencia física equilibrándola con la lesión muscular que tenía.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="robert-completo" class="testimonio__detalle">
+                <h3>Robert Mendez Paucar</h3>
+                <div class="testimonio__cuerpo">
+                    <img src="assets/images/robert.png" alt="Robert Mendez">
+                    <div class="testimonio__texto">
+                        <p>Yo contaba con la preocupación de no poder integrarme de nuevo a mis rutinas habituales de ejercicios, pero durante el tiempo usando el aplicativo he mejorado notablemente. La plataforma me permitió mantener una rutina constante de rehabilitación sin necesidad de desplazarme constantemente al centro médico.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="seccion-contacto">
+            <h1 class="contacto__titulo">¡Contáctanos!</h1>
+            <p class="contacto__subtitulo">Contamos con nuestras propias redes</p>
+
+            <div class="contacto__redes">
+                <a href="https://facebook.com" target="_blank" class="red-social__elemento">
+                    <div class="red-social__icono red-social__icono--facebook">
+                        <svg viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.513c-1.491 0-1.956.93-1.956 1.874v2.25h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/>
+                        </svg>
+                    </div>
+                    <span class="red-social__nombre">SportRecover</span>
+                </a>
+                <a href="https://instagram.com" target="_blank" class="red-social__elemento">
+                    <div class="red-social__icono red-social__icono--instagram">
+                        <svg viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+                        </svg>
+                    </div>
+                    <span class="red-social__nombre">Sport_Recover</span>
+                </a>
+                <a href="https://x.com" target="_blank" class="red-social__elemento">
+                    <div class="red-social__icono red-social__icono--x">
+                        <svg viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.259 5.63L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77z"/>
+                        </svg>
+                    </div>
+                    <span class="red-social__nombre">Sport_Recover</span>
+                </a>
+                <a href="https://tiktok.com" target="_blank" class="red-social__elemento">
+                    <div class="red-social__icono red-social__icono--tiktok">
+                        <svg viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/>
+                        </svg>
+                    </div>
+                    <span class="red-social__nombre">SportRecover</span>
+                </a>
+            </div>
+        </section>
+
     </main>
 
-    <footer class="brand-footer">
-        @2026 SportRecover
-    </footer>
-    <script src="public/assets/scripts/main.js"></script>
-    
+    <footer class="pie-marca">@2026 SportRecover</footer>
+    <script src="assets/scripts/main.js"></script>
 </body>
 </html>
