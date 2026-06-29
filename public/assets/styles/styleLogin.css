@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+.topheader {
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 999;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.Menu-Horizontal {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    gap: 0;
+    width: 100%;
+    padding-right: 0;
+}
+
+.Menu-Horizontal li a {
+    text-decoration: none;
+    color: #1a1a1a;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.Menu-Horizontal li a:hover {
+    color: #2EAD4B;
+}
+
+
+.seccion_registro {
+    padding-top: 100px;
+    padding-bottom: 40px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cont-gral-registro {
+    display: flex;
+    width: 100%;
+    max-width: 900px;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+    margin: 0 20px;
+}
+
+
+.cont-formulario {
+    flex: 1;
+    padding: 40px;
+}
+
+.logo-registro {
+    margin-bottom: 24px;
+}
+
+.cont-formulario h2 {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #1a1a1a;
+    margin-bottom: 8px;
+}
+
+.texto-verde {
+    color: #2EAD4B;
+}
+
+.subtitulo {
+    color: #6b7280;
+    font-size: 0.875rem;
+    margin-bottom: 24px;
+    line-height: 1.5;
+}
+
+.formulario .campo {
+    margin-bottom: 14px;
+}
+
+.formulario .campo input {
+    width: 100%;
+    padding: 13px 14px;
+    border: 1.5px solid #d1d5db;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    outline: none;
+}
+
+.formulario .campo input:focus {
+    border-color: #2EAD4B;
+}
+
+.hint {
+    display: block;
+    font-size: 0.75rem;
+    color: #6b7280;
+    margin-top: 4px;
+    padding-left: 2px;
+}
+
+.campo-check {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 20px;
+    font-size: 0.8rem;
+    color: #6b7280;
+}
+
+.campo-check a {
+    color: #1a1a1a;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.campo-check a:hover {
+    color: #2EAD4B;
+}
+
+.btn-crear {
+    width: 100%;
+    padding: 14px;
+    background-color: #2EAD4B;
+    color: white;
+    font-size: 0.95rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn-crear:hover {
+    background-color: #259040;
+}
+
+.separador {
+    text-align: center;
+    color: #6b7280;
+    font-size: 0.78rem;
+    margin: 16px 0;
+}
+
+.btn-google {
+    width: 100%;
+    padding: 12px;
+    background-color: white;
+    border: 1.5px solid #d1d5db;
+    border-radius: 10px;
+    font-size: 0.88rem;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn-google:hover {
+    background-color: #f9fafb;
+}
+
+.iniciar-sesion {
+    text-align: center;
+    margin-top: 16px;
+    font-size: 0.8rem;
+    color: #6b7280;
+}
+
+.iniciar-sesion a {
+    color: #1a1a1a;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.iniciar-sesion a:hover {
+    color: #2EAD4B;
+}
+
+
+.cont-imagen {
+    flex: 1;
+    position: relative;
+    background-color: #e8f5f0;
+    overflow: hidden;
+}
+
+.cont-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+}
+
+
+.seccion-footer {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 30px 20px;
+}
+
+.cont-gral-footer {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-copy p {
+    color: #6b7280;
+    font-size: 0.78rem;
+}
