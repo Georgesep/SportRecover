@@ -12,7 +12,7 @@ body {
     min-height: 100vh;
 }
 
-
+/* ── NAV ── */
 .topheader {
     position: fixed;
     background-color: white;
@@ -30,9 +30,7 @@ body {
     list-style: none;
     display: flex;
     justify-content: space-around;
-    gap: 0;
     width: 100%;
-    padding-right: 0;
 }
 
 .Menu-Horizontal li a {
@@ -46,8 +44,8 @@ body {
     color: #2EAD4B;
 }
 
-
-.seccion_registro {
+/* ── SECCIÓN LOGIN ── */
+.seccion_login {
     padding-top: 100px;
     padding-bottom: 40px;
     flex: 1;
@@ -56,7 +54,7 @@ body {
     justify-content: center;
 }
 
-.cont-gral-registro {
+.cont-gral-login {
     display: flex;
     width: 100%;
     max-width: 900px;
@@ -67,13 +65,28 @@ body {
     margin: 0 20px;
 }
 
+/* ── IMAGEN ── */
+.cont-imagen {
+    flex: 1;
+    background-color: #e8f5f0;
+    overflow: hidden;
+}
 
+.cont-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+}
+
+/* ── FORMULARIO ── */
 .cont-formulario {
     flex: 1;
     padding: 40px;
 }
 
-.logo-registro {
+.logo-login {
     margin-bottom: 24px;
 }
 
@@ -112,34 +125,16 @@ body {
     border-color: #2EAD4B;
 }
 
-.hint {
-    display: block;
-    font-size: 0.75rem;
-    color: #6b7280;
-    margin-top: 4px;
-    padding-left: 2px;
-}
-
 .campo-check {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     gap: 10px;
     margin-bottom: 20px;
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     color: #6b7280;
 }
 
-.campo-check a {
-    color: #1a1a1a;
-    font-weight: 600;
-    text-decoration: none;
-}
-
-.campo-check a:hover {
-    color: #2EAD4B;
-}
-
-.btn-crear {
+.btn-login {
     width: 100%;
     padding: 14px;
     background-color: #2EAD4B;
@@ -151,7 +146,7 @@ body {
     cursor: pointer;
 }
 
-.btn-crear:hover {
+.btn-login:hover {
     background-color: #259040;
 }
 
@@ -181,40 +176,24 @@ body {
     background-color: #f9fafb;
 }
 
-.iniciar-sesion {
+.registrate {
     text-align: center;
     margin-top: 16px;
     font-size: 0.8rem;
     color: #6b7280;
 }
 
-.iniciar-sesion a {
+.registrate a {
     color: #1a1a1a;
     font-weight: 600;
     text-decoration: none;
 }
 
-.iniciar-sesion a:hover {
+.registrate a:hover {
     color: #2EAD4B;
 }
 
-
-.cont-imagen {
-    flex: 1;
-    position: relative;
-    background-color: #e8f5f0;
-    overflow: hidden;
-}
-
-.cont-imagen img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center top;
-    display: block;
-}
-
-
+/* ── FOOTER ── */
 .seccion-footer {
     background-color: #1a1a1a;
     color: white;
@@ -229,7 +208,7 @@ body {
     align-items: center;
 }
 
-.footer-copy p {
+.cont-gral-footer p {
     color: #6b7280;
     font-size: 0.78rem;
 }
